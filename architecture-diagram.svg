@@ -1,0 +1,60 @@
+<svg viewBox="0 0 1000 420" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1000" height="420" fill="#ffffff"/>
+
+  <!-- Developer -->
+  <rect x="20" y="170" width="140" height="80" rx="10" fill="#f4f4f4" stroke="#333" stroke-width="2"/>
+  <text x="90" y="205" text-anchor="middle" font-size="16" font-weight="bold" fill="#111">Developer</text>
+  <text x="90" y="228" text-anchor="middle" font-size="13" fill="#333">git push</text>
+
+  <!-- Arrow Dev -> GitHub -->
+  <line x1="160" y1="210" x2="230" y2="210" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- GitHub Repo -->
+  <rect x="230" y="170" width="160" height="80" rx="10" fill="#24292e"/>
+  <text x="310" y="205" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">GitHub Repo</text>
+  <text x="310" y="228" text-anchor="middle" font-size="13" fill="#ddd">azure-ci-pipeline</text>
+
+  <!-- Arrow GitHub -> Actions (up) -->
+  <line x1="330" y1="170" x2="330" y2="100" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- Arrow GitHub -> Pipelines (down) -->
+  <line x1="330" y1="250" x2="330" y2="320" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- GitHub Actions box -->
+  <rect x="420" y="40" width="220" height="80" rx="10" fill="#2088ff"/>
+  <text x="530" y="70" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">GitHub Actions (CI)</text>
+  <text x="530" y="93" text-anchor="middle" font-size="13" fill="#eaf3ff">lint (pylint) + test (pytest)</text>
+
+  <!-- Azure Pipelines box -->
+  <rect x="420" y="290" width="220" height="80" rx="10" fill="#0078d4"/>
+  <text x="530" y="320" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">Azure Pipelines (CD)</text>
+  <text x="530" y="343" text-anchor="middle" font-size="13" fill="#eaf3ff">build + package + deploy</text>
+
+  <!-- Arrow Pipelines -> App Service -->
+  <line x1="640" y1="330" x2="700" y2="330" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Azure App Service box -->
+  <rect x="700" y="290" width="220" height="80" rx="10" fill="#005a9e"/>
+  <text x="810" y="320" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">Azure App Service</text>
+  <text x="810" y="343" text-anchor="middle" font-size="13" fill="#eaf3ff">azure-ci-pipeline-ethar</text>
+
+  <!-- Arrow App Service -> Flask API (up) -->
+  <line x1="810" y1="290" x2="810" y2="220" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Flask ML API box -->
+  <rect x="700" y="150" width="220" height="70" rx="10" fill="#f4f4f4" stroke="#333" stroke-width="2"/>
+  <text x="810" y="180" text-anchor="middle" font-size="16" font-weight="bold" fill="#111">Flask ML API</text>
+  <text x="810" y="202" text-anchor="middle" font-size="13" fill="#333">/predict returns JSON</text>
+
+  <!-- Arrow Flask API back to Developer (dashed, response) -->
+  <path d="M 700 185 C 400 185, 200 185, 90 250" fill="none" stroke="#888" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrowgrey)"/>
+  <text x="400" y="150" text-anchor="middle" font-size="12" fill="#888">prediction response</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333"/>
+    </marker>
+    <marker id="arrowgrey" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#888"/>
+    </marker>
+  </defs>
+</svg>
