@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 
-PORT=443
-echo "Port: $PORT"
+echo "Predicting..."
 
-# POST method predict
 curl -d '{
    "CHAS":{
       "0":0
@@ -23,7 +21,7 @@ curl -d '{
    "LSTAT":{
       "0":4.98
    }
-}'\
+}' \
      -H "Content-Type: application/json" \
-     -X POST https://azure-ci-pipeline-ethar.azurewebsites.net:$PORT/predict 
-     #your application name azure-ci-pipeline-ethargoes here
+     -X POST \
+     https://azure-ci-pipeline-ethar.azurewebsites.net/predict
