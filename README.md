@@ -70,7 +70,7 @@ GitHub Repo --push--> GitHub Actions (lint + test)
 
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
+Future improvements could include: adding a staging deployment slot in Azure App Service for safer rollouts before hitting production, adding integration tests that hit the live `/predict` endpoint as part of the CI pipeline, adding Application Insights for monitoring and alerting on the deployed app, containerizing the app with Docker for more portable deployments, and expanding the model to support additional housing features or a more recent dataset.
 
 ## Demo
 
