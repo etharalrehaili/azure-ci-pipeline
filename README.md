@@ -14,9 +14,8 @@ This project sets up a CI/CD pipeline on Microsoft Azure for a Flask machine lea
 
 ## Project Plan
 
-<TODO: Project Plan
-* A link to a Trello board for the project
-* A link to a spreadsheet that includes the original and final project plan>
+* [Trello board](https://trello.com/invite/b/6a8c9662a2a003470a1f75cd/ATTIa33111d19ecbb54e2b9b967f4e3e1c0424D1F226/azure-ci-pipeline) — tracks all major tasks and milestones for this project
+* [Project plan spreadsheet](https://docs.google.com/spreadsheets/d/1VSnN02s8MG6Lm-1X8oxR-_r4qlfQS-yE1XfkoLnpex4/edit?usp=sharing) — quarterly/yearly plan, weekly deliverables, and task estimates
 
 ## Instructions
 
@@ -54,19 +53,20 @@ GitHub Repo --push--> GitHub Actions (lint + test)
 
 ### Screenshots
 
-* Project running on Azure App Service
-* Project cloned into Azure Cloud Shell
-* Passing tests from `make all`
-* Output of a test run
-* Successful deploy in Azure Pipelines
-* Azure App Service running from Azure Pipelines automatic deployment
-* Successful prediction from deployed Flask app:
-```bash
-  udacity@Azure:~$ ./make_predict_azure_app.sh
-  Port: 443
-  {"prediction":[2.431574790057212]}
-```
-* Output of streamed log files from deployed application
+Project cloned into Azure Cloud Shell:
+![Cloud Shell clone](cloud-shell-clone.png)
+
+Passing tests and lint output from `make all`:
+![make all output](make-all-output.png)
+
+Successful deploy in Azure Pipelines:
+![Azure Pipelines success](azure-pipelines-success.png)
+
+Azure App Service running, with a successful prediction from the deployed Flask app:
+![App running and prediction](app-running-and-prediction.png)
+
+Output of `commands.sh` (Azure CLI deployment) showing the deployed URL:
+![commands.sh output](commands-sh-output.png)
 
 ## Enhancements
 
