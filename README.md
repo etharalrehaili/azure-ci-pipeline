@@ -21,10 +21,7 @@ This project sets up a CI/CD pipeline on Microsoft Azure for a Flask machine lea
 
 ### Architectural Diagram
 
-```
-GitHub Repo --push--> GitHub Actions (lint + test)
-             --push--> Azure Pipelines (build + deploy) --> Azure App Service --> Flask ML API
-```
+![Architecture Diagram](architecture-diagram.svg)
 
 ### Running the project
 
