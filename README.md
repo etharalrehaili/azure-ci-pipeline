@@ -7,6 +7,7 @@ This repo is for the Cloud DevOps using Microsoft Azure course
 
 <img width="1455" height="329" alt="image" src="https://github.com/user-attachments/assets/fb38c985-d107-472f-8a9a-841d187652bb" />
 
+
 # Overview
 
 This project sets up a CI/CD pipeline on Microsoft Azure for a Flask machine learning API that predicts Boston housing prices. GitHub Actions handles Continuous Integration (linting and testing), and Azure Pipelines handles Continuous Delivery, automatically building and deploying the app to Azure App Service on every push to `main`.
